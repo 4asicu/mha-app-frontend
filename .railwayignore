@@ -1,2 +1,16 @@
-# Nothing to ignore - deploy everything
+# Railway ignore file for Flutter web deployment
+# Only deploy the built web files
 
+# Development files
+*.dart
+*.lock
+pubspec.yaml
+analysis_options.yaml
+
+# Build artifacts not needed
+*.map
+*.symbols
+
+# Git files
+.git
+.gitignore
