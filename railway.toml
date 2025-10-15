@@ -1,7 +1,6 @@
 [build]
-builder = "NIXPACKS"
+builder = "nixpacks"
 
 [deploy]
-startCommand = "npx serve -s . -l $PORT"
-restartPolicyType = "ON_FAILURE"
+startCommand = "python -m http.server $PORT"
 
